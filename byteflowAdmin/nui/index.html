@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byteflow Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Byteflow Menu</h1>
+        <div id="mainMenu" class="menu-content">
+            <button id="adminButton">Admin Menu</button>
+            <button id="closeButton">Close</button>
+        </div>
+        <div id="adminMenu" class="menu-content hidden">
+            <h2>Admin Menu</h2>
+            <input id="targetId" type="number" placeholder="Target Player ID" />
+            <button data-action="kickPlayer">Kick Player</button>
+            <button data-action="revivePlayer">Revive Player</button>
+            <button id="backButton">Back</button>
+        </div>
+        <!-- Spawn Vehicle -->
+        <h3>Spawn Vehicle</h3>
+        <input id="vehicleName" type="text" placeholder="Vehicle Name" />
+        <button id="spawnVehicleButton">Spawn Vehicle</button>
+    
+        <!-- Give Car -->
+        <h3>Give Car</h3>
+        <input id="giveVehicleName" type="text" placeholder="Vehicle Name" />
+        <input id="giveTargetId" type="number" placeholder="Target Player ID" />
+        <button id="giveCarButton">Give Car</button>
+    
+        <!-- Give Money -->
+        <h3>Give Money</h3>
+        <input id="giveMoneyAmount" type="number" placeholder="Amount" />
+        <input id="giveMoneyTargetId" type="number" placeholder="Target Player ID" />
+        <button id="giveMoneyButton">Give Money</button>
+    
+        <!-- Navigation -->
+        <button id="backButton">Back</button>
+    </div>    
+    <script src="app.js"></script>
+</body>
+</html>
